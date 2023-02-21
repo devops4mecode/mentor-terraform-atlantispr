@@ -13,14 +13,12 @@ workflows:
   production:
    plan:
      steps:
-     - lock
      - init
      - plan:
          extra_args: ["-var-file", "prod.tfvars"]
   staging:
    plan:
      steps:
-     - lock
      - init
      - plan:
          extra_args: ["-var-file", "stag.tfvars"]
