@@ -4,7 +4,7 @@ resource "aws_instance" "mcintro" {
   availability_zone = var.availability_zone
   key_name          = var.key-pair-name
   tags = {
-    "Name"    = "Atlantis-Demo",
+    "Name"    = "Atlantis-Demo-New",
     "Project" = "Atlantis-Terraform-GH-Demo"
   }
 }
