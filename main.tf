@@ -5,6 +5,6 @@ resource "aws_instance" "mcintro" {
   key_name          = var.key-pair-name
   tags = {
     "Name"    = "Atlantis-Demo",
-    "Project" = "Atlantis-Terraform-GH"
+    "Project" = "Atlantis-Terraform-GH-Demo"
   }
 }
