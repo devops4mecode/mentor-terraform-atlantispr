@@ -13,14 +13,14 @@ workflows:
   production:
    plan:
      steps:
-     - providers lock -platform=darwin_amd64 -platform=darwin_arm64 -platform=linux_amd64
+     - lock
      - init
      - plan:
          extra_args: ["-var-file", "prod.tfvars"]
   staging:
    plan:
      steps:
-     - providers lock -platform=darwin_amd64 -platform=darwin_arm64 -platform=linux_amd64
+     - lock
      - init
      - plan:
          extra_args: ["-var-file", "stag.tfvars"]
